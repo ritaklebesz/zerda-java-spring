@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Projects</title>
+</head>
+<body>
+<h1>Projects</h1>
+<p>Early access of Greenfox Academy Zerda Raptor Projects with tech tags</p>
+<ul th:each="project : ${projects}">
+    <li th:text="${project.toString()}">project1</li>
+</ul>
+</body>
+</html>
